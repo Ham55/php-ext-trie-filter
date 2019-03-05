@@ -562,7 +562,7 @@ PHP_FUNCTION(trie_filter_write)
         RETURN_FALSE;
     }
 
-    RETVAL_STRINGL(p, plen);
+    RETVAL_STRING(p, plen);
     free(p);
 }
 /* }}} */
